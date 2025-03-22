@@ -21,7 +21,9 @@ export default function InvestmentsPage() {
 
         <div className="mt-8 grid gap-8 lg:grid-cols-[280px_1fr]">
           <aside className="">
-            <PropertyFilters />
+            <Suspense fallback={<PropertyListSkeleton />}>
+              <PropertyFilters />
+            </Suspense>
           </aside>
 
           <main>
