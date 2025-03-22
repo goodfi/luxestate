@@ -16,12 +16,12 @@ export default function InvestmentsPage() {
             Browse our current and upcoming real estate investments
           </p>
         </div>
-
-        <PropertySearch />
-
+        <Suspense>
+          <PropertySearch />
+        </Suspense>
         <div className="mt-8 grid gap-8 lg:grid-cols-[280px_1fr]">
           <aside className="">
-            <Suspense fallback={<PropertyListSkeleton />}>
+            <Suspense>
               <PropertyFilters />
             </Suspense>
           </aside>
