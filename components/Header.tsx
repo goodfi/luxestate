@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import React from 'react';
-import { LanguageSwitcher } from './language-switvher';
+// import { LanguageSwitcher } from './language-switvher';
 import { Button } from './ui/button';
 
 const Header = () => {
@@ -37,7 +37,7 @@ const Header = () => {
           </Link>
         </nav>
         <div className="flex items-center gap-4">
-          <LanguageSwitcher />
+          {/* <LanguageSwitcher /> */}
           <Button variant="outline" size="sm" className="hidden md:flex">
             Contact Us
           </Button>
