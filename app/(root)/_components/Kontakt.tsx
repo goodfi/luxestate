@@ -5,7 +5,7 @@ import React from 'react';
 const Kontakt = () => {
   return (
     <section id="contact" className="bg-muted py-24">
-      <div className="container mx-auto">
+      <div className="container mx-auto px-2">
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
             Contact Us

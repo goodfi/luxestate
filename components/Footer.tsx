@@ -4,7 +4,7 @@ import { Button } from './ui/button';
 
 const Footer = () => {
   return (
-    <footer className="border-t bg-background py-12">
+    <footer className="border-t bg-background py-12 px-2">
       <div className="container mx-auto">
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
           <div>

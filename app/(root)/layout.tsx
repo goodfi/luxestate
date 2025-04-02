@@ -16,7 +16,7 @@ export default function RootLayout({
   return (
     <main className="flex flex-col min-h-[100vh] ">
       <Header />
-      <main className="flex-1">{children}</main>
+      <main className="flex-1 ">{children}</main>
       <Footer />
       <CookieConsent />
     </main>

@@ -6,7 +6,7 @@ import { Button } from './ui/button';
 const Header = () => {
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container mx-auto flex h-16 items-center justify-between">
+      <div className="container mx-auto flex h-16 items-center justify-between px-2">
         <Link href="/" className="flex items-center space-x-2">
           <span className="text-xl font-bold">LuxEstate</span>
         </Link>
@@ -41,9 +41,11 @@ const Header = () => {
           <Button variant="outline" size="sm" className="hidden md:flex">
             Contact Us
           </Button>
-          <Button size="sm" className="hidden md:flex">
-            View Properties
-          </Button>
+          <Link href={'/investments'}>
+            <Button size="sm" className="hidden md:flex">
+              View Properties
+            </Button>
+          </Link>
           <Button variant="outline" size="icon" className="md:hidden">
             <span className="sr-only">Toggle menu</span>
             <svg

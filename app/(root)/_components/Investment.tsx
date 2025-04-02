@@ -7,7 +7,7 @@ import React from 'react';
 const Investment = () => {
   return (
     <section id="investments" className="bg-muted py-24">
-      <div className="container mx-auto">
+      <div className="container mx-auto px-2">
         <h2 className="text-center text-3xl font-bold tracking-tight sm:text-4xl">
           Current Investments
         </h2>
@@ -54,14 +54,26 @@ const Investment = () => {
                 </div>
                 <div className="mt-6 flex items-center justify-between">
                   <span className="font-bold">From $250,000</span>
-                  <Button
-                    variant="outline"
-                    size="sm"
-                    className="group-hover:bg-primary group-hover:text-primary-foreground"
+                  <Link
+                    href={
+                      i === 1
+                        ? '/investments/riverside-residences'
+                        : i === 2
+                        ? '/investments/green-valley-villas'
+                        : i === 3
+                        ? '/investments/skyline-towers'
+                        : ''
+                    }
                   >
-                    View Details
-                    <ArrowRight className="ml-2 h-4 w-4" />
-                  </Button>
+                    <Button
+                      variant="outline"
+                      size="sm"
+                      className="group-hover:bg-primary group-hover:text-primary-foreground"
+                    >
+                      View Details
+                      <ArrowRight className="ml-2 h-4 w-4" />
+                    </Button>
+                  </Link>
                 </div>
               </div>
             </div>
